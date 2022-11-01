@@ -1,3 +1,14 @@
+body {
+  background-image: url('https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Fitness/Galleries/10+Fitness+Tips/Muscle-confusion-is-the-only-way-to-go..jpg');
+  background-position: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
 label {
   width: 80px;
   display: inline-block;
@@ -5,4 +16,25 @@ label {
 
 div {
   margin: 5px;
+}
+
+.registration-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to top, rgba(42, 42, 42, 0.85), transparent);
+  opacity: 0.6;
+  width: 350px;
+}
+
+.reg-info {
+  color:rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+.btn-submit {
+  font-size: 15px;
+  width: 100px;
+  margin: 10px;
 }

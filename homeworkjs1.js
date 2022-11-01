@@ -1,17 +1,26 @@
 function needAction() {
-  const fullName = "Anonym";
-  const age = 20;
-  const weight = 100;
-  const height = 170;
+  const fullNameEl = document.getElementById("fullName");
+  const ageEl = document.getElementById("age");
+  const weightEl = document.getElementById("weight");
+  const heightEl = document.getElementById("height");
 
-  if (age < 18 && age > 60) {
-    console.log("Sorry, you are not eligible for the program");
-  } else if (weight < 60 && weight > 120) {
-    console.log("Sorry, you are not eligible for the program");
-  } else if (height < 160 && height > 195) {
-    console.log("Sorry, you are not eligible for the program");
+  const age = ageEl.value;
+  const height = heightEl.value;
+  const weight = weightEl.value;
+  const fullName = fullNameEl.value;
+
+  if (age < 18 || age > 60) {
+    console.log("Sorry, you are not eligible for the program by your age");
+  } else if (weight < 60 || weight > 120) {
+    console.log("Sorry, you are not eligible for the program be your weight");
+  } else if (height < 160 || height > 195) {
+    console.log("Sorry, you are not eligible for the program by your height");
   } else {
     console.log("Congrats! Your registration form has been submitted");
+    fullNameEl.value = "";
+    ageEl.value = "";
+    weightEl.value = "";
+    heightEl.value = "";
   }
 }
 
