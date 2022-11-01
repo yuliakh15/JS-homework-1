@@ -23,7 +23,7 @@ div {
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(to top, rgba(42, 42, 42, 0.85), transparent);
-  opacity: 0.6;
+  opacity: 2;
   width: 350px;
 }
 
